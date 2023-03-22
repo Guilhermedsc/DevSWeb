@@ -1,11 +1,11 @@
-const Temperatura03 = () => {
-    const celsiusParaFahrenheit = (c) => {
-        return (c * 9 / 5) + 32;
-    }
+import React, { useState } from 'react';
 
-    const fahrenheitParaCelsius = (f) => {
-        return (f - 32) * 5 / 9;
-    }
+const Temperatura03 = () => {
+    const [n1, setNumero1] = useState('');
+
+    const celsiusParaFahrenheit = (c) => (c * 9 / 5) + 32;
+
+    const fahrenheitParaCelsius = (f) => (f - 32) * 5 / 9
 
     const kelvin = (k) => {
         return {
@@ -17,10 +17,14 @@ const Temperatura03 = () => {
 
     return (
         <div>
-            <h1>Conversor de Temperatura</h1>
-            <h2>Temperatura em 100ºC é: {celsiusParaFahrenheit(100)}ºF</h2>
-            <h2>Temperatura em 100ºF é: {fahrenheitParaCelsius(100)}ºC</h2>
-            <h2>Temperatura em 100ºK é: {kelvin(100).CC}ºC e {kelvin(100).KK}ºF</h2>
+            <label>
+                Digite o uma temperatura em °C:
+                <input type="number" value={n1} onChange={evento => setNumero1(evento.target.value)} />
+            </label>
+            <br />
+            <h2>Temperatura em {n1}°C é: {celsiusParaFahrenheit(n1)}ºF</h2>
+            <h2>Temperatura em {n1}°F é: {fahrenheitParaCelsius(n1)}ºC</h2>
+            <h2>Temperatura em {n1}°K é: {kelvin(n1).CC}ºC e {kelvin(n1).KK}ºF</h2>
         </div>
     );
 }
