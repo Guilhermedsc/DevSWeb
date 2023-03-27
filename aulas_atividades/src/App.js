@@ -17,7 +17,7 @@
   );
 } */
 
-import { SuperMercado, Legume, Bebida } from "./components/05Children";
+/* import { SuperMercado, Legume, Bebida } from "./components/05Children";
 
 function App() {
   return (
@@ -26,6 +26,26 @@ function App() {
         <Legume nome="verdura" />
         <Bebida nome="só vai" />
       </SuperMercado>
+    </div>
+  );
+} */
+
+//import Pai from "./atividades/components/atividades01/questao01.jsx/01Pai";
+//import * as PC from "./atividades/components/atividades01/02MeuPC";
+/*   return (
+    <div className="App">
+      <PC.PlacaMae nome="placaONE" valor="R$ 300" />
+      <PC.Memorias nome="memoriaONE" valor="R$ 200" />
+      <PC.PlacaDevideo nome="placaDevideoONE" valor="R$ 500" />
+    </div>
+  ); */
+import { World, Arena } from "./atividades/components/atividades01/03Batalha";
+function App() {
+  return (
+    <div className="App">
+      <World>
+        <Arena />
+      </World>
     </div>
   );
 }
