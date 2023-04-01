@@ -39,17 +39,26 @@ function App() {
       <PC.PlacaDevideo nome="placaDevideoONE" valor="R$ 500" />
     </div>
   ); */
-import { World, Arena } from "./atividades/components/atividades01/03Batalha";
+/* import { World, Arena } from "./atividades/components/atividades01/03Batalha";
 function App() {
   return (
     <div className="App">
       <World>
-        <Arena />
+        <Arena /> 
       </World>
     </div>
   );
-}
+} */
 
+import FuncaoA from "./components/06Contexto/FuncaoA";
+
+function App() {
+  return (
+    <div className="App">
+      <FuncaoA />
+    </div>
+  );
+}
 
 
 export default App;
