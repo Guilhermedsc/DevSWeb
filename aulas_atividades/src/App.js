@@ -50,12 +50,14 @@ function App() {
   );
 } */
 
-import FuncaoA from "./components/06Contexto/FuncaoA";
+//import FuncaoA from "./components/06Contexto/FuncaoA";
+//import FuncaoA from "./atividades/components/atividades02/06Contexto/FuncaoA";
+import ComponenteAvo from "./atividades/components/atividades02/02Pokemon/ComponenteAvo";
 
 function App() {
   return (
     <div className="App">
-      <FuncaoA />
+      <ComponenteAvo />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import CorContext from "./MyContext"
 
-const FuncaoC = () => {
+const FuncaoD = () => {
     const cores = useContext(CorContext)
     return (
         <div>
