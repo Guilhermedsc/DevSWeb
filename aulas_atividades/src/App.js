@@ -52,7 +52,7 @@ function App() {
 
 //import FuncaoA from "./components/06Contexto/FuncaoA";
 //import FuncaoA from "./atividades/components/atividades02/06Contexto/FuncaoA";
-import ComponenteAvo from "./atividades/components/atividades02/02Pokemon/ComponenteAvo";
+/* import ComponenteAvo from "./atividades/components/atividades02/02Pokemon/ComponenteAvo";
 
 function App() {
   return (
@@ -60,7 +60,23 @@ function App() {
       <ComponenteAvo />
     </div>
   );
-}
+} */
 
+//import SaveData from "./components/07Storage/FunctionLocalStorage";
+//import Pai from "./components/08PaiFilho/Pai";
+//import FunctionEstados from "./components/09Estados/FunctionEstados";
+//import PokemonAxios from "./components/10Axios/PokemonAxios";
+//import MyPromise from "./components/12Promises/MyPromise";
+//import Questao01X from "./components/Prova01F/questao01";
+//import Questao02 from "./components/Prova01F/questao02";
+import Questao03 from "./components/Prova01F/questao03";
+
+function App() {
+  return (
+    <div className="App">
+      <Questao03 />
+    </div>
+  );
+}
 
 export default App;

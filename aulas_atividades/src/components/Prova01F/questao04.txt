@@ -1,0 +1,43 @@
+O problema do "Props Drilling" ocorre quando você precisa passar propriedades (props) através de vários níveis de 
+componentes, mesmo que esses componentes intermediários não precisem utilizar ou modificar essas props.
+
+Os Contextos permitem compartilhar dados específicos com componentes filhos, eliminando a necessidade 
+de passar manualmente as props por vários níveis.
+
+
+
+import React, { createContext, useContext } from 'react';
+
+const MyContext = createContext();
+
+const ParentComponent = () => {
+  const data = 'Hello, world!';
+
+  return (
+    <MyContext.Provider value={data}>
+      <ChildComponent />
+    </MyContext.Provider>
+  );
+};
+
+const ChildComponent = () => {
+  const data = useContext(MyContext);
+
+  return <h1>{data}</h1>;
+};
+
+
+const App = () => {
+  return (
+    <div>
+      <ParentComponent />
+    </div>
+  );
+};
+
+export default App;
+
+
+Com o uso de Contextos, o componente ChildComponent pode acessar o valor do contexto diretamente, sem 
+precisar passá-lo como uma prop. Isso evita a necessidade de passar manualmente as props pelos componentes 
+intermediários, resolvendo o problema do "Props Drilling".
